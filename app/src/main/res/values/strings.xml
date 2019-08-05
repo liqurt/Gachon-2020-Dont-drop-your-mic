@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DDYM</string>
+    <string name="cd_none">아직 쓸 말이없음.</string>
+
+    <string name="cd_title">마이크를 놓지마라</string>
+    <string name="cd_difficulty">난이도 : 음역을 바탕으로 측정함</string>
+    <string name="cd_atmosphere">분위기 : 카테고리를 바탕으로 측정함</string>
+    <string name="cd_voice_color">음색 : 음색을 바탕으로 측정함</string>
+    <string name="cd_settings">설정 : 각종 설정</string>
+
+    <string name="cd_recording">녹음 : 이 모든것의 시작은 녹음으로부터</string>
+</resources>
