@@ -88,51 +88,61 @@
             android:id="@+id/searchBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/title"
-            android:layout_marginTop="20dp">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/label"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp"
-                android:textColor="#000000"
-                android:textSize="20dp"
                 android:layout_marginLeft="50dp"
                 android:layout_weight="1"
+                android:hint="노래명, 가수명"
                 android:padding="5dp"
-                android:hint="노래명, 가수명"/>
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="20dp" />
 
             <ImageButton
                 android:id="@+id/searchBTN"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:scaleType="fitCenter"
-                android:background="@color/colorCharcoal"
                 android:layout_marginRight="40dp"
-                android:src="@drawable/search_button"/>
+                android:background="@color/colorCharcoal"
+                android:scaleType="fitCenter"
+                android:src="@drawable/search_button" />
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="50dp">
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ImageButton
+                <Button
                     android:id="@+id/recording"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:background="@android:drawable/screen_background_light_transparent"
                     android:contentDescription="@string/cd_recording"
-                    app:srcCompat="@drawable/recording" />
+                    android:text="녹음" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pitch:"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="40dp"
+                    android:text="0"/>
 
             </LinearLayout>
         </LinearLayout>
